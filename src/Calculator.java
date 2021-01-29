@@ -16,8 +16,10 @@ public class Calculator {
 		  System.out.println("5.Exit");
 		  System.out.println();
 		  int operation = scan.nextInt();
-		  if(operation == 5)
+		  if(operation == 5) {
+			  System.out.println("Thank You for using Calculator :)");
 			  break;
+		  }
 		  else if(operation > 0 && operation < 5) {
 			  System.out.println("Enter First Number");
 			  float firstNumber = scan.nextFloat();
@@ -48,7 +50,7 @@ public class Calculator {
 	  }
 	 } 
 	  catch(InputMismatchException ex) {
-			 System.out.println("Please Enter Valid Input!");
+			 System.out.println("An Exception Has Occured! Please Enter Valid Input!");
 		 }
 	  
 	  catch(Exception ex) {
